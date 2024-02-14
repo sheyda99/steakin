@@ -1,0 +1,54 @@
+header {
+    .swiper {
+        width: 100%;
+        margin: 20px 0;
+        height: calc(100vh - 40px);
+        .swiper-slide {
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            .swiper-content {
+                height: 100%;
+                background-color: $dark-overlay;
+                color: $white;
+                text-align: center;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                span {
+                    display: inline-block;
+                    font-size: 4.6rem;
+                    margin-bottom: 30px;
+                }
+                p {
+                    margin-top: 25px;
+                    margin-bottom: 25px;
+                    line-height: 2.6rem;
+                    font: {
+                        family: "Poppins", sans-serif;
+                        weight: 600;
+                        size: 1.6rem;
+                    }
+                    @include media-breakpoint-down(md) {
+                        line-height: 2.4rem;
+                        font: {
+                            size: 1.2rem;
+                        } 
+                    }
+                    @include media-breakpoint-down(sm) {
+                        display: none;
+                    }
+                }
+            }
+        }
+        .swiper-button-prev, .swiper-button-next {
+            color: $white;
+            &::after {
+                font-size: 2.6rem;
+            }
+        }
+        .swiper-pagination-bullet {
+            background-color: $white;
+        }
+    }   
+}

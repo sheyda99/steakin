@@ -1,0 +1,39 @@
+// Buttons
+@mixin btn($bg-color, $color, $br-color) {
+    background-color: $bg-color;
+    color: $color;
+    border-color: $br-color;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0 46px;
+    margin: 10px 15px;
+    text-transform: uppercase;
+    line-height: 4.7rem;
+    font: {
+        family: "Poppins", sans-serif;
+        weight: 700;
+        size: 1.4rem;
+    }
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 50px;
+    transition: 0.5s;
+    @include media-breakpoint-down(md) {
+        padding: 0 26px;
+        line-height: 4rem;
+    }
+    &.btn-white-outline {
+        @include btn(transparent, $white, $white);
+        &:hover {
+            @include btn($golden, $white, $golden);
+        }
+    }
+    &.btn-golden {
+        @include btn($golden, $white, $golden);
+        &:hover {
+            @include btn(transparent, $white, $white);
+        }
+    }
+}

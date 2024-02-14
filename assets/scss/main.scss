@@ -1,0 +1,25 @@
+// Bootstrap
+@import "../bootstrap/scss/bootstrap-grid.scss";
+
+// Variables
+@import "./_variables.scss";
+
+// Mixins
+@import "./_mixins.scss";
+
+// Reset
+@import "./_reset.scss";
+
+// Components
+@import "./components/_header.scss";
+@import "./components/footer.scss";
+@import "./components/_swiper.scss";
+@import "./components/headings.scss";
+
+// Pages
+@import "./pages/_home.scss";
+@import "./pages/_ourStory.scss";
+@import "./pages/_ourChefs.scss";
+@import "./pages/_menu.scss";
+@import "./pages/_shops.scss";
+@import "./pages/_contact.scss";

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Steak In</title>
+    <script src="https://kit.fontawesome.com/f9a01ea1da.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins:wght@400;600;700&family=Ruthie&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/scss/main.css">
+</head>
+<body>
+    <header>
+        <div id="sticky" class="fixed_nav">
+            <nav class="header_nav container">
+                <div id="navLogo" class="header_nav_logo"><img src="assets/images/logo-light.png" alt="Logo"></div>
+                <div class="header_nav_menu">
+                    <ul>
+                        <li><a class="active" href="index.html">Home</a></li>
+                        <li><a href="our-story.html">Our Story</a></li>
+                        <li><a href="our-chefs.html">Our Chefs</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li class="button"><a href="#">Book a table</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                        <li><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                        <li><a href="#"><i class="fa-solid fa-bars"></i></a></li>
+                    </ul>
+                </div>
+                <div class="header_nav_mobile">
+                    <a href="#"><i class="fa-solid fa-bars"></i></a>
+                </div>
+            </nav>
+        </div>
+
+        <div class="container-fluid">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide" style="background-image: url(assets/images/bg-slider1.jpg);">
+                        <div class="swiper-content">
+                            <div>
+                                <h3>Welcome To Steak In</h3>
+                                <h2>We Are Food Masters!</h2>
+                                <p>Steak In has the perfect place to enjoy fine food and great cocktails with<br> excellent service, in comfortable atmospheric surroundings.</p>
+                                <a class="btn btn-white-outline" href="#">Book your table now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide" style="background-image: url(assets/images/bg-slider2.jpg);">
+                        <div class="swiper-content">
+                            <div>
+                                <h3>Steak In Offers You</h3>
+                                <h2>Fresh & Tasty Meals</h2>
+                                <p>Steak In has the perfect place to enjoy fine food and great cocktails with<br> excellent service, in comfortable atmospheric surroundings.</p>
+                                <a class="btn btn-golden" href="#">View menu</a>
+                                <a class="btn btn-white-outline" href="#">Book a table</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide" style="background-image: url(assets/images/bg-slider3.jpg);">
+                        <div class="swiper-content">
+                            <div>
+                                <span><i class="fa-solid fa-utensils"></i></span>
+                                <h3>Creative & Talented Chefs</h3>
+                                <h2>Real & Delicious Food</h2>
+                                <p>Steak In has the perfect place to enjoy fine food and great cocktails with<br> excellent service, in comfortable atmospheric surroundings.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        window.onscroll = function() {myFunction()};
+        var nav = document.getElementById("sticky");
+        var navLogo = document.getElementById("navLogo").childNodes[0];
+        function myFunction() {
+            if (window.pageYOffset > 400) {
+                nav.classList.add("sticky");
+                navLogo.src = "assets/images/logo-dark.png";
+            } else if (window.innerWidth >= 992 && window.pageYOffset <= 400) {
+                nav.classList.remove("sticky");
+                navLogo.src = "assets/images/logo-light.png";
+            }
+        }
+
+        if (window.innerWidth < 992) {
+            nav.classList.add("sticky");
+            navLogo.src = "assets/images/logo-dark.png";
+        }
+
+
+        var swiper = new Swiper(".mySwiper", {
+            effect: 'coverflow',
+            speed: 1000,
+            loop: true,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            pagination: {
+                el: ".swiper-pagination",
+            }
+        });
+    </script>
+</body>
+</html>
