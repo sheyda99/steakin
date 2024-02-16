@@ -1,0 +1,310 @@
+section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    .section-content {
+        padding: 0 45px;
+        text-align: center;
+        @include media-breakpoint-down(md) {
+            margin-bottom: 30px;
+        }
+        p {
+            color: $gray;
+            margin-bottom: 30px;
+        }
+    }
+    .divider_icon {
+        display: inline-block;
+        color: #666;
+        font-size: 1.8rem;
+        padding: 4px 0;
+        margin: 20px 0;
+    }
+    .overlay {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $dark-overlay;
+    }
+    &.about {
+        .section-image > div {
+            
+            position: relative;
+            padding: 0 15px;
+            span {
+                position: absolute;
+                display: block;
+                width: calc(100% - 50px);
+                height: calc(100% - 20px);
+                margin: 10px;
+                border: 1px dashed rgba(255, 255, 255, .5);
+            }
+            img {
+                width: 100%;
+                height: 100%;
+            }
+            &:first-child {
+                margin-top: 20px;
+                span {
+                    height: calc(100% - 40px);
+                }
+                img {
+                    height: calc(100% - 20px);
+                }
+            }
+        }
+    }
+    &.dishes {
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding: 0;
+        .overlay {
+            padding: 100px;
+            @include media-breakpoint-down(md) {
+                padding: 20px;
+            }
+            .section-content {
+                background-color: $white;
+                position: relative;
+                padding: 90px 80px 50px;
+                @include media-breakpoint-down(md) {
+                    padding: 20px;
+                }
+                &::after {
+                    content: '';
+                    width: calc(100% - 20px);
+                    height: calc(100% - 20px);
+                    position: absolute;
+                    top: 10px;
+                    bottom: 10px;
+                    left: 10px;
+                    right: 10px;
+                    border: 1px dashed $golden;
+                }
+                .dish_item {
+                    display: flex;
+                    text-align: left;
+                    margin-top: 20px;
+                    margin-bottom: 10px;
+                    padding: 0 15px;
+                    @include media-breakpoint-down(md) {
+                        flex-direction: column;
+                    }
+                    &_img {
+                        position: relative;
+                        span {
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            width: 100px;
+                            height: 100px;
+                            background-color: $dark-overlay;
+                            opacity: 0;
+                            transition: 0.5s;
+                            @include media-breakpoint-down(md) {
+                                width: 100%;
+                                height: 100%;
+                            }
+                            i {
+                                display: inline-block;
+                                width: 30px;
+                                height: 30px;
+                                text-align: center;
+                                background-color: $golden;
+                                color: $white;
+                                border-radius: 100%;
+                                line-height: 30px;
+                                font-size: 1.2rem;
+                                transition: 0.5s;
+                                cursor: pointer;
+                                &:hover {
+                                    background-color: $white;
+                                    color: $golden;
+                                }
+                            }
+                        }
+                        img {
+                            width: 100px;
+                            @include media-breakpoint-down(md) {
+                                width: 100%;
+                            }
+                        }
+                    }
+                    &_text {
+                        padding-left: 30px;
+                        @include media-breakpoint-down(md) {
+                            padding: 20px 0 0;
+                        }
+                        &_name {
+                            display: flex;
+                            justify-content: space-between;
+                            border-bottom: 1px dashed #d8d8d8;
+                            padding-bottom: 7px;
+                            margin-bottom: 13px;
+                            & span {
+                                color: $golden;
+                                line-height: 2.2rem;
+                                font: {
+                                    family: "Poppins", sans-serif;
+                                    weight: 600;
+                                    size: 1.8rem;
+                                }
+                            }
+                        }
+                        p {
+                            color: #666;
+                            font-size: 1.3rem;
+                        }
+                    }
+                    &:hover {
+                        .dish_item_img span {
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &.menu {
+        .menu_ul {
+            margin-bottom: 30px;
+            ul {
+                text-align: center;
+                li {
+                    display: inline-block;
+                    margin: 10px 13px;
+                    color: #333;
+                    font: {
+                        family: "Poppins", sans-serif;
+                        weight: 600;
+                        size: 1.6rem;
+                    }
+                    a {
+                        border-bottom: 2px solid transparent;
+                        &.active, &:hover {
+                            color: $golden;
+                            border-bottom-color: $golden;
+                        }
+                    }
+                }
+            }
+        }
+        .menu_item {
+            box-shadow: 0 1px 73px rgba(40,40,40,.1);
+            &_text {
+                position: relative;
+                padding: 0 30px;
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                @include media-breakpoint-down(sm) {
+                    padding: 30px;
+                }
+                .divider_icon {
+                    margin: 10px 0;
+                }
+                &::after {
+                    content: '';
+                    width: calc(100% - 20px);
+                    height: calc(100% - 20px);
+                    position: absolute;
+                    top: 10px;
+                    bottom: 10px;
+                    left: 10px;
+                    right: 10px;
+                    border: 1px dashed $golden;
+                }
+                &_name {
+                    & span {
+                        display: inline-block;
+                        color: $golden;
+                        line-height: 2.2rem;
+                        margin-bottom: 8px;
+                        font: {
+                            family: "Poppins", sans-serif;
+                            weight: 600;
+                            size: 1.8rem;
+                        }
+                    }
+                }
+                p {
+                    color: #666;
+                    line-height: 2.4rem;
+                    font-size: 1.4rem;
+                }
+            }
+            &_img {
+                padding-bottom: 50%;
+                position: relative;
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+                @include media-breakpoint-down(sm) {
+                    width: 100%;
+                    padding-bottom: 100%;
+                }
+                span {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 100%;
+                    height: 100%;
+                    background-color: $dark-overlay;
+                    opacity: 0;
+                    transition: 0.5s;
+                    i {
+                        display: inline-block;
+                        width: 40px;
+                        height: 40px;
+                        text-align: center;
+                        background-color: $golden;
+                        color: $white;
+                        border-radius: 100%;
+                        line-height: 40px;
+                        font-size: 1.4rem;
+                        transition: 0.5s;
+                        cursor: pointer;
+                        &:hover {
+                            background-color: $white;
+                            color: $golden;
+                        }
+                    }
+                }
+            }
+            &:hover {
+                .menu_item_img span {
+                    opacity: 1;
+                }
+            }
+        }
+        .menu_more {
+            text-align: center;
+            margin-top: 50px;
+        }
+    }
+    &.testimonials {
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding: 0;
+        .overlay {
+            padding: 100px;
+            @include media-breakpoint-down(md) {
+                padding: 20px;
+            }
+            .section-content {
+                h4 {
+                    color: $white;
+                }
+            }
+        }
+    }
+}

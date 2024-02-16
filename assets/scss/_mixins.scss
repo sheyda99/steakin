@@ -30,6 +30,18 @@
             @include btn($golden, $white, $golden);
         }
     }
+    &.btn-black-outline {
+        @include btn(transparent, $black, $black);
+        &:hover {
+            @include btn($golden, $white, $white);
+        }
+    }
+    &.btn-golden-outline {
+        @include btn(transparent, $golden, $golden);
+        &:hover {
+            @include btn($golden, $white, $white);
+        }
+    }
     &.btn-golden {
         @include btn($golden, $white, $golden);
         &:hover {

@@ -7,12 +7,10 @@ h2 {
     }
     @include media-breakpoint-down(md) {
         line-height: 4.5rem;
+        margin-bottom: 30px;
         font: {
             size: 3.8rem;
         }
-    }
-    @include media-breakpoint-down(md) {
-        margin-bottom: 30px;
     }
 }
 h3 {
@@ -28,5 +26,29 @@ h3 {
         font: {
             size: 3rem;
         }
+    }
+}
+h4 {
+    color: #222222;
+    line-height: 5.4rem;
+    font: {
+        family: "Abril Fatface", serif;
+        weight: 400;
+        size: 4.5rem;
+    }
+    @include media-breakpoint-down(md) {
+        line-height: 3.6rem;
+        font: {
+            size: 3rem;
+        }
+    }
+}
+h5 {
+    color: $black;
+    line-height: 1.55;
+    font: {
+        family: "Poppins", sans-serif;
+        weight: 600;
+        size: 1.8rem;
     }
 }
