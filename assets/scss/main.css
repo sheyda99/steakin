@@ -4082,6 +4082,37 @@
     display: none !important;
   }
 }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  margin: 0 20px 20px;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: 0.5s;
+}
+
+p {
+  line-height: 2.6rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+}
+
 .btn {
   display: inline-block;
   padding: 0 46px;
@@ -4141,37 +4172,6 @@
   background-color: transparent;
   color: #fff;
   border-color: #fff;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html {
-  font-size: 10px;
-}
-
-body {
-  margin: 0 20px 20px;
-}
-
-ul {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-  transition: 0.5s;
-}
-
-p {
-  line-height: 2.6rem;
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  font-size: 1.6rem;
 }
 
 header {
@@ -4408,6 +4408,55 @@ footer .bottom-footer {
   background-color: #1b1b1b;
 }
 
+h2 {
+  line-height: 1.2;
+  font-family: "Abril Fatface", serif;
+  font-weight: 400;
+  font-size: 8.5rem;
+}
+@media (max-width: 767.98px) {
+  h2 {
+    margin-bottom: 30px;
+    font-size: 3.8rem;
+  }
+}
+
+h3 {
+  color: #bb9356;
+  line-height: 1.2;
+  font-family: "Ruthie", cursive;
+  font-weight: 400;
+  font-size: 4.5rem;
+}
+@media (max-width: 767.98px) {
+  h3 {
+    line-height: 3.6rem;
+    font-size: 3rem;
+  }
+}
+
+h4 {
+  color: #222222;
+  line-height: 5.4rem;
+  font-family: "Abril Fatface", serif;
+  font-weight: 400;
+  font-size: 4.5rem;
+}
+@media (max-width: 767.98px) {
+  h4 {
+    line-height: 3.6rem;
+    font-size: 3rem;
+  }
+}
+
+h5 {
+  color: #282828;
+  line-height: 1.55;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 1.8rem;
+}
+
 header .headerSwiper {
   width: 100%;
   margin: 20px 0;
@@ -4556,55 +4605,6 @@ main .newsSwiper .swiper-slide .swiper-content .news_text p {
 }
 main .newsSwiper .swiper-slide .swiper-content .btn {
   margin: 20px 0;
-}
-
-h2 {
-  line-height: 1.2;
-  font-family: "Abril Fatface", serif;
-  font-weight: 400;
-  font-size: 8.5rem;
-}
-@media (max-width: 767.98px) {
-  h2 {
-    margin-bottom: 30px;
-    font-size: 3.8rem;
-  }
-}
-
-h3 {
-  color: #bb9356;
-  line-height: 1.2;
-  font-family: "Ruthie", cursive;
-  font-weight: 400;
-  font-size: 4.5rem;
-}
-@media (max-width: 767.98px) {
-  h3 {
-    line-height: 3.6rem;
-    font-size: 3rem;
-  }
-}
-
-h4 {
-  color: #222222;
-  line-height: 5.4rem;
-  font-family: "Abril Fatface", serif;
-  font-weight: 400;
-  font-size: 4.5rem;
-}
-@media (max-width: 767.98px) {
-  h4 {
-    line-height: 3.6rem;
-    font-size: 3rem;
-  }
-}
-
-h5 {
-  color: #282828;
-  line-height: 1.55;
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  font-size: 1.8rem;
 }
 
 section {

@@ -1,20 +1,18 @@
 // Bootstrap
 @import "../bootstrap/scss/bootstrap-grid.scss";
 
-// Variables
-@import "./_variables.scss";
+// Abstracts
+@import "./abstracts/reset";
+@import "./abstracts/variables";
+@import "./abstracts/mixins";
 
-// Mixins
-@import "./_mixins.scss";
-
-// Reset
-@import "./_reset.scss";
+// Layout
+@import "./layout/_header.scss";
+@import "./layout/footer.scss";
 
 // Components
-@import "./components/_header.scss";
-@import "./components/footer.scss";
-@import "./components/_swiper.scss";
 @import "./components/headings.scss";
+@import "./components/_swiper.scss";
 
 // Pages
 @import "./pages/_home.scss";
