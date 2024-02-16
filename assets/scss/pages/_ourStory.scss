@@ -1,0 +1,91 @@
+.about {
+    &_images {
+        .col-12 {
+            position: relative;
+            span {
+                position: absolute;
+                top: 10px;
+                left: 15px;
+                width: calc(100% - 30px);
+                height: calc(100% - 20px);
+                border: 1px dashed rgba(255,255,255,.5);
+            }
+            @include media-breakpoint-down(md) {
+                margin-bottom: 20px;
+            }
+        }
+        img {
+            width: 100%;
+        }
+    }
+}
+.our_story_testimonials {
+    i {
+        font-size: 5rem;
+        color: $white;
+    }
+    h3 {
+        color: $white;
+        margin: 20px 0;
+    }
+    span {
+        color: $golden;
+        font: {
+            family: "Poppins", sans-serif;
+            weight: 400;
+            size: 1.3rem;
+            style: italic;
+        }
+    }
+}
+.awards {
+    &_images {
+        margin: 40px auto;
+        img {
+            margin: 0 10px;
+        }
+    }
+    &_list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #666;
+        font: {
+            family: "Poppins", sans-serif;
+            weight: 400;
+            size: 1.3rem;
+        }
+        @include media-breakpoint-down(md) {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        li {
+            margin-top: 5px;
+            &::after, &::before {
+                margin: 0 10px;
+                color: $black;
+            }
+        }
+        &_1 {
+            text-align: right;
+            li::after {
+                content: "\25CF";
+            }
+            @include media-breakpoint-down(md) {
+                text-align: left;
+                li::after {
+                    content: "";
+                }
+                li::before {
+                    content: "\25CF";
+                }
+            }
+        }
+        &_2 {
+            text-align: left;
+            li::before {
+                content: "\25CF";
+            }
+        }
+    }
+}

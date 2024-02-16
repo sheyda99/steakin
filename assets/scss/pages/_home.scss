@@ -1,11 +1,16 @@
 section {
     padding-top: 100px;
     padding-bottom: 100px;
+    @include media-breakpoint-down(md) {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
     .section-content {
         padding: 0 45px;
         text-align: center;
         @include media-breakpoint-down(md) {
             margin-bottom: 30px;
+            padding: 0 20px;
         }
         p {
             color: $gray;
