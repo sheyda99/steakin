@@ -1,0 +1,133 @@
+.chef {
+    &_img {
+        position: relative;
+        img {
+            width: 100%;
+            border-radius: 3px;
+        }
+        &_overlay {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(34,34,34,.95);
+            border-radius: 3px;
+            transition: 0.5s;
+            opacity: 0;
+            cursor: pointer;
+            &:hover {
+                opacity: 1;
+            }
+        }
+    }
+    &_contact {
+        li {
+            display: inline-block;
+            background-color: $golden;
+            height: 40px;
+            width: 40px;
+            margin: 3px;
+            text-align: center;
+            transition: 0.5s;
+            &:hover {
+                background-color: $golden-dark;
+            }
+            a {
+                color: $white;
+                font-size: 1.4rem;
+                line-height: 40px;
+            }
+        }
+    }
+    &_info {
+        padding-top: 25px;
+        margin-bottom: 40px;
+        text-align: center;
+        p {
+            margin-bottom: 8px;
+            color: $black;
+            transition: 0.5s;
+            cursor: pointer;
+            font: {
+                family: "Poppins", sans-serif;
+                weight: 600;
+                size: 1.7rem;
+            }
+            &:hover {
+                color: $golden;
+            }
+        }
+        span {
+            color: #666;
+            font: {
+                family: "Poppins", sans-serif;
+                weight: 400;
+                size: 1.3rem;
+            }
+        }
+    }
+}
+.about_progress {
+    .progress {
+        margin-top: 30px;
+        &_info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: $black;
+            p {
+                text-transform: uppercase;
+                font: {
+                    family: "Poppins", sans-serif;
+                    weight: 700;
+                    size: 1.3rem;
+                }
+            }
+            span {
+                color: #9b9b9b;
+                font: {
+                    family: "Poppins", sans-serif;
+                    weight: 700;
+                    size: 1.3rem;
+                }
+            }
+        }
+        &_bar {
+            height: 9px;
+            border-radius: 9px;
+            background-color: $black;
+            position: relative;
+            &::after {
+                content: "";
+                position: absolute;
+                top: 3px;
+                left: 3px;
+                height: 3px;
+                background-color: $golden;
+                border-radius: 9px;
+            }
+        }
+    }
+    .col-12:nth-child(1) {
+        .progress_bar::after {
+            width: 95%;
+        }
+    }
+    .col-12:nth-child(2) {
+        .progress_bar::after {
+            width: 90%;
+        }
+    }
+    .col-12:nth-child(3) {
+        .progress_bar::after {
+            width: 80%;
+        }
+    }
+    .col-12:nth-child(4) {
+        .progress_bar::after {
+            width: 75%;
+        }
+    }
+}

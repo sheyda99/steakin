@@ -5017,4 +5017,117 @@ section.testimonials .overlay .section-content h4 {
 }
 .awards_list_2 li::before {
   content: "●";
+}
+
+.chef_img {
+  position: relative;
+}
+.chef_img img {
+  width: 100%;
+  border-radius: 3px;
+}
+.chef_img_overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(34, 34, 34, 0.95);
+  border-radius: 3px;
+  transition: 0.5s;
+  opacity: 0;
+  cursor: pointer;
+}
+.chef_img_overlay:hover {
+  opacity: 1;
+}
+.chef_contact li {
+  display: inline-block;
+  background-color: #bb9356;
+  height: 40px;
+  width: 40px;
+  margin: 3px;
+  text-align: center;
+  transition: 0.5s;
+}
+.chef_contact li:hover {
+  background-color: #a67e43;
+}
+.chef_contact li a {
+  color: #fff;
+  font-size: 1.4rem;
+  line-height: 40px;
+}
+.chef_info {
+  padding-top: 25px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+.chef_info p {
+  margin-bottom: 8px;
+  color: #282828;
+  transition: 0.5s;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 1.7rem;
+}
+.chef_info p:hover {
+  color: #bb9356;
+}
+.chef_info span {
+  color: #666;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 1.3rem;
+}
+
+.about_progress .progress {
+  margin-top: 30px;
+}
+.about_progress .progress_info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #282828;
+}
+.about_progress .progress_info p {
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+.about_progress .progress_info span {
+  color: #9b9b9b;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+.about_progress .progress_bar {
+  height: 9px;
+  border-radius: 9px;
+  background-color: #282828;
+  position: relative;
+}
+.about_progress .progress_bar::after {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  height: 3px;
+  background-color: #bb9356;
+  border-radius: 9px;
+}
+.about_progress .col-12:nth-child(1) .progress_bar::after {
+  width: 95%;
+}
+.about_progress .col-12:nth-child(2) .progress_bar::after {
+  width: 90%;
+}
+.about_progress .col-12:nth-child(3) .progress_bar::after {
+  width: 80%;
+}
+.about_progress .col-12:nth-child(4) .progress_bar::after {
+  width: 75%;
 }/*# sourceMappingURL=main.css.map */
