@@ -34,3 +34,10 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+// Flex
+@mixin flex($j-content, $a-items) {
+    display: flex;
+    justify-content: $j-content;
+    align-items: $a-items;
+}

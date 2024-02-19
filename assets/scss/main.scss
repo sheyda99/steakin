@@ -2,9 +2,9 @@
 @import "../bootstrap/scss/bootstrap-grid.scss";
 
 // Abstracts
+@import "./abstracts/mixins";
 @import "./abstracts/reset";
 @import "./abstracts/variables";
-@import "./abstracts/mixins";
 
 // Layout
 @import "./layout/_header.scss";

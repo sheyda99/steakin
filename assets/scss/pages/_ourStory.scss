@@ -42,9 +42,7 @@
         }
     }
     &_list {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex(center, center);
         color: #666;
         @include fontPoppins(1.3rem, 400);
         @include media-breakpoint-down(md) {

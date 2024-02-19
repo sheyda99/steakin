@@ -1,9 +1,7 @@
 .filter {
     padding: 60px 0 30px;
     .col-12 {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        @include flex(space-between, center);
         border: 2px solid #eee;
         border-radius: 3px;
         padding: 20px;
