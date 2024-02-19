@@ -42,6 +42,12 @@
             @include btn($golden, $white, $white);
         }
     }
+    &.btn-black {
+        @include btn($black, $white, $black);
+        &:hover {
+            @include btn($golden, $white, $golden);
+        }
+    }
     &.btn-golden {
         @include btn($golden, $white, $golden);
         &:hover {
