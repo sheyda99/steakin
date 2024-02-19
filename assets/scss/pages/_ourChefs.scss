@@ -37,7 +37,6 @@
             a {
                 color: $white;
                 font-size: 1.4rem;
-                line-height: 40px;
             }
         }
     }
@@ -50,22 +49,14 @@
             color: $black;
             transition: 0.5s;
             cursor: pointer;
-            font: {
-                family: "Poppins", sans-serif;
-                weight: 600;
-                size: 1.7rem;
-            }
+            @include fontPoppins(1.7rem, 600);
             &:hover {
                 color: $golden;
             }
         }
         span {
             color: #666;
-            font: {
-                family: "Poppins", sans-serif;
-                weight: 400;
-                size: 1.3rem;
-            }
+            @include fontPoppins(1.3rem, 400);
         }
     }
 }
@@ -79,19 +70,11 @@
             color: $black;
             p {
                 text-transform: uppercase;
-                font: {
-                    family: "Poppins", sans-serif;
-                    weight: 700;
-                    size: 1.3rem;
-                }
+                @include fontPoppins(1.3rem, 700);
             }
             span {
                 color: #9b9b9b;
-                font: {
-                    family: "Poppins", sans-serif;
-                    weight: 700;
-                    size: 1.3rem;
-                }
+                @include fontPoppins(1.3rem, 700);
             }
         }
         &_bar {

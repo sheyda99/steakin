@@ -55,3 +55,26 @@
         }
     }
 }
+
+// Fonts
+@mixin fontAbril($f-size) {
+    font: {
+        family: "Abril Fatface", serif;
+        weight: 400;
+        size: $f-size;
+    }
+}
+@mixin fontRuthie($f-size) {
+    font: {
+        family: "Ruthie", cursive;
+        weight: 400;
+        size: $f-size;
+    }
+}
+@mixin fontPoppins($f-size, $f-weight) {
+    font: {
+        family: "Poppins", sans-serif;
+        weight: $f-weight;
+        size: $f-size;
+    }
+}

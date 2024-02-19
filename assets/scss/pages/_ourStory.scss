@@ -30,12 +30,8 @@
     }
     span {
         color: $golden;
-        font: {
-            family: "Poppins", sans-serif;
-            weight: 400;
-            size: 1.3rem;
-            style: italic;
-        }
+        @include fontPoppins(1.3rem, 400);
+        font-style: italic;
     }
 }
 .awards {
@@ -50,11 +46,7 @@
         justify-content: center;
         align-items: center;
         color: #666;
-        font: {
-            family: "Poppins", sans-serif;
-            weight: 400;
-            size: 1.3rem;
-        }
+        @include fontPoppins(1.3rem, 400);
         @include media-breakpoint-down(md) {
             flex-direction: column;
             align-items: flex-start;

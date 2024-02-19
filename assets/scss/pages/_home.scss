@@ -121,7 +121,6 @@ section {
                                 background-color: $golden;
                                 color: $white;
                                 border-radius: 100%;
-                                line-height: 30px;
                                 font-size: 1.2rem;
                                 transition: 0.5s;
                                 cursor: pointer;
@@ -151,12 +150,7 @@ section {
                             margin-bottom: 13px;
                             & span {
                                 color: $golden;
-                                line-height: 2.2rem;
-                                font: {
-                                    family: "Poppins", sans-serif;
-                                    weight: 600;
-                                    size: 1.8rem;
-                                }
+                                @include fontPoppins(1.8rem, 600);
                             }
                         }
                         p {
@@ -182,11 +176,7 @@ section {
                     display: inline-block;
                     margin: 10px 13px;
                     color: #333;
-                    font: {
-                        family: "Poppins", sans-serif;
-                        weight: 600;
-                        size: 1.6rem;
-                    }
+                    @include fontPoppins(1.6rem, 600);
                     a {
                         border-bottom: 2px solid transparent;
                         &.active, &:hover {
@@ -231,18 +221,12 @@ section {
                     & span {
                         display: inline-block;
                         color: $golden;
-                        line-height: 2.2rem;
                         margin-bottom: 8px;
-                        font: {
-                            family: "Poppins", sans-serif;
-                            weight: 600;
-                            size: 1.8rem;
-                        }
+                        @include fontPoppins(1.8rem, 600);
                     }
                 }
                 p {
                     color: #666;
-                    line-height: 2.4rem;
                     font-size: 1.4rem;
                 }
             }
@@ -276,7 +260,6 @@ section {
                         background-color: $golden;
                         color: $white;
                         border-radius: 100%;
-                        line-height: 40px;
                         font-size: 1.4rem;
                         transition: 0.5s;
                         cursor: pointer;

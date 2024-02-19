@@ -1,53 +1,25 @@
 h2 {
-    line-height: 1.2;
-    font: {
-        family: "Abril Fatface", serif;
-        weight: 400;
-        size: 8.5rem;
-    }
+    @include fontAbril(8.5rem);
     @include media-breakpoint-down(md) {
         margin-bottom: 30px;
-        font: {
-            size: 3.8rem;
-        }
+        font-size: 3.8rem;
     }
 }
 h3 {
     color: $golden;
-    line-height: 1.2;
-    font: {
-        family: "Ruthie", cursive;
-        weight: 400;
-        size: 4.5rem;
-    }
+    @include fontRuthie(4.5rem);
     @include media-breakpoint-down(md) {
-        line-height: 3.6rem;
-        font: {
-            size: 3rem;
-        }
+        font-size: 3rem;
     }
 }
 h4 {
     color: #222222;
-    line-height: 5.4rem;
-    font: {
-        family: "Abril Fatface", serif;
-        weight: 400;
-        size: 4.5rem;
-    }
+    @include fontAbril(4.5rem);
     @include media-breakpoint-down(md) {
-        line-height: 3.6rem;
-        font: {
-            size: 3rem;
-        }
+        font-size: 3rem;
     }
 }
 h5 {
     color: $black;
-    line-height: 1.55;
-    font: {
-        family: "Poppins", sans-serif;
-        weight: 600;
-        size: 1.8rem;
-    }
+    @include fontPoppins(1.8rem, 600);
 }

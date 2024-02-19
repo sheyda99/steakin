@@ -21,17 +21,12 @@
     }
     select {
         color: #9b9b9b;
-        line-height: 30px;
         height: 30px;
         padding: 0 8px;
         border: 1px solid #eee;
         width: 220px;
         max-width: 100%;
-        font: {
-            family: "Poppins", sans-serif;
-            weight: 400;
-            size: 1.2rem;
-        }
+        @include fontPoppins(1.2rem, 400);
     }
 }
 .meals {
@@ -50,22 +45,15 @@
                 text-transform: uppercase;
                 border-radius: 3px;
                 a {
-                    line-height: 50px;
-                    font: {
-                        family: "Poppins", sans-serif;
-                        weight: 700;
-                        size: 1.3rem;
-                    }
+                    @include fontPoppins(1.3rem, 700);
                 }
             }
         }
         &_info {
             span {
                 color: $golden;
-                font: {
-                    weight: 600;
-                    size: 1.6rem;
-                }
+                font-weight: 600;
+                font-size: 1.6rem;
             }
         }
     }
@@ -82,12 +70,7 @@
                 display: inline-block;
                 width: 50px;
                 height: 50px;
-                line-height: 50px;
-                font: {
-                    family: "Poppins", sans-serif;
-                    weight: 600;
-                    size: 1.6rem;
-                }
+                @include fontPoppins(1.6rem, 600);
             }
             &.active, &:hover {
                 background-color: $golden;

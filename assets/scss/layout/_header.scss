@@ -43,11 +43,7 @@ header {
             @include media-breakpoint-down(lg) {
                 display: none;
             }
-            font: {
-                family: "Poppins", sans-serif;
-                weight: 700;
-                size: 1.4rem;
-            }
+            @include fontPoppins(1.4rem, 700);
             ul {
                 li {
                     display: inline-block;
@@ -66,7 +62,6 @@ header {
                         background-color: $golden;
                         padding: 0 9px;
                         margin: 0 8px;
-                        line-height: 2.5rem;
                         transition: 0.5s;
                         &:hover {
                             background-color: $golden-dark;
@@ -76,7 +71,6 @@ header {
                 &:last-child {
                     border-left: 1px solid rgb(255, 255, 255, .25);
                     margin-left: 14px;
-                    line-height: 2.5rem;
                     li {
                         margin-left: 20px;
                         margin-right: 0;
@@ -132,11 +126,7 @@ header {
         .breadcrumb li {
             display: inline-block;
             margin-bottom: 60px;
-            font: {
-                family: "Poppins", sans-serif;
-                weight: 400;
-                size: 1.4rem;
-            }
+            @include fontPoppins(1.4rem, 400);
             &:not(:last-child)::after {
                 content: " /";
                 margin: 0 10px;
