@@ -59,9 +59,7 @@ section {
         }
     }
     &.dishes {
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
+        @include bg-img();
         padding: 0;
         .overlay {
             padding: 100px;
@@ -233,9 +231,7 @@ section {
             &_img {
                 padding-bottom: 50%;
                 position: relative;
-                background-position: center;
-                background-size: cover;
-                background-repeat: no-repeat;
+                @include bg-img();
                 @include media-breakpoint-down(sm) {
                     width: 100%;
                     padding-bottom: 100%;
@@ -282,9 +278,7 @@ section {
         }
     }
     &.testimonials {
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
+        @include bg-img();
         padding: 0;
         .overlay {
             padding: 100px;
