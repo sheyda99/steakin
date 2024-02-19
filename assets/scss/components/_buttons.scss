@@ -4,11 +4,7 @@
     margin: 10px 15px;
     text-transform: uppercase;
     line-height: 4.7rem;
-    font: {
-        family: "Poppins", sans-serif;
-        weight: 700;
-        size: 1.4rem;
-    }
+    @include fontPoppins(1.4rem, 700);
     border-width: 2px;
     border-style: solid;
     border-radius: 50px;

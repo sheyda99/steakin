@@ -4290,6 +4290,7 @@ footer .top-footer .social_media li a {
   height: 42px;
   width: 42px;
   background-color: #1c1c1c;
+  line-height: 42px;
   font-size: 1.4rem;
   text-align: center;
   transition: 0.5s;
@@ -4888,6 +4889,7 @@ section.menu .menu_item_img span i {
   background-color: #bb9356;
   color: #fff;
   border-radius: 100%;
+  line-height: 40px;
   font-size: 1.4rem;
   transition: 0.5s;
   cursor: pointer;
@@ -5035,8 +5037,6 @@ section.testimonials .overlay .section-content h4 {
 .chef_contact li {
   display: inline-block;
   background-color: #bb9356;
-  height: 40px;
-  width: 40px;
   margin: 3px;
   text-align: center;
   transition: 0.5s;
@@ -5045,7 +5045,11 @@ section.testimonials .overlay .section-content h4 {
   background-color: #a67e43;
 }
 .chef_contact li a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
   color: #fff;
+  line-height: 40px;
   font-size: 1.4rem;
 }
 .chef_info {
@@ -5168,13 +5172,14 @@ section.testimonials .overlay .section-content h4 {
   overflow: hidden;
 }
 .meals .chef_contact li {
-  height: 50px;
-  width: auto;
   padding: 0 30px;
   text-transform: uppercase;
   border-radius: 3px;
 }
 .meals .chef_contact li a {
+  height: 50px;
+  width: auto;
+  line-height: 50px;
   font-family: "Poppins", sans-serif;
   font-weight: 700;
   font-size: 1.3rem;
@@ -5197,6 +5202,7 @@ section.testimonials .overlay .section-content h4 {
   display: inline-block;
   width: 50px;
   height: 50px;
+  line-height: 50px;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 1.6rem;
@@ -5244,6 +5250,7 @@ section.testimonials .overlay .section-content h4 {
   height: 42px;
   width: 42px;
   background-color: #1c1c1c;
+  line-height: 42px;
   color: #fff;
   font-size: 1.4rem;
   text-align: center;
@@ -5260,6 +5267,7 @@ section.testimonials .overlay .section-content h4 {
   color: #9b9b9b;
   border: 2px solid #eee;
   transition: 0.5s;
+  line-height: 26px;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-size: 1.3rem;

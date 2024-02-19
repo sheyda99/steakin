@@ -29,6 +29,7 @@
                 height: 42px;
                 width: 42px;
                 background-color: #1c1c1c;
+                line-height: 42px;
                 color: $white;
                 font-size: 1.4rem;
                 text-align: center;
@@ -48,6 +49,7 @@
             color: #9b9b9b;
             border: 2px solid #eee;
             transition: 0.5s;
+            line-height: 26px;
             @include fontPoppins(1.3rem, 400);
             &:focus {
                 border-color: $golden;
